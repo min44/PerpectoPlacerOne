@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BimGen.PerpectoPlacerOne.Utility.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CableTrayNameFamilyKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PR - Сборка - Проём</Value>
+    </Setting>
+    <Setting Name="FamiliesDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Users\MSbook\Documents\Projects\WebGen\workinprogress\PerpectoPlacerOne\families</Value>
+    </Setting>
+    <Setting Name="MinWindowWidth" Type="System.String" Scope="User">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+    <Setting Name="MinWindowHeight" Type="System.String" Scope="User">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

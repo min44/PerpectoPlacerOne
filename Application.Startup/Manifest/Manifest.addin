@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>PerpectoPlacerOne</Name>
+    <Assembly>Program/BimGen.PerpectoPlacerOne.Application.Startup.dll</Assembly>
+    <AddInId>8fa94520-c003-47ae-9b6d-42d260884ab2</AddInId>
+    <Publisher>BimGen LLC</Publisher>
+    <FullClassName>BimGen.PerpectoPlacerOne.Application.Startup.Main</FullClassName>
+    <VendorId>BimGen LLC</VendorId>
+    <VendorDescription></VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ApplicationPackage SchemaVersion="1.0"
+                    AutodeskProduct="Revit"
+                    ProductType="Application"
+                    Name="PerpectoPlacerOne"
+                    AppVersion="1.0"
+                    Description="The application for Autodesk® Revit®"
+                    Author="BIM Generacia"
+                    AppNameSpace="appstore.exchange.autodesk.com"
+                    ProductCode="{d08ed870-7d76-478c-b45b-e5560219822d}"
+                    UpgradeCode="{5d6a6e2c-6e53-484a-a7bb-5a28bde72dc4}"
+                    OnlineDocumentation="bimgen.org"
+                    SupportedLocales="Enu|Rus"
+                    FriendlyVersion="1.0"
+                    DescriptionRus="Приложение для Autodesk® Revit®">
+  <CompanyDetails Name="LLC BIM Generacia"
+                  NameRus="ООО БИМ Генерация"
+                  Email="support@bimgen.app"
+                  Url="bimgen.org"
+                  Phone=" " />
+  <RuntimeRequirements OS="Win64"
+                       Platform="Revit"
+                       SeriesMin="R2016"
+                       SeriesMax="R2022" />
+
+  <Components Description="2016 parts">
+    <RuntimeRequirements OS="Win64"
+                         Platform="Revit|Revit MEP"
+                         SeriesMin="R2016"
+                         SeriesMax="R2016" />
+    <ComponentEntry AppName="PerpectoPlacerOne"
+                    Version="1.0"
+                    ModuleName="./Contents/Manifest.addin" />
+  </Components>
+
+  <Components Description="2017 parts">
+    <RuntimeRequirements OS="Win64"
+                         Platform="Revit"
+                         SeriesMin="R2017"
+                         SeriesMax="R2017" />
+    <ComponentEntry AppName="PerpectoPlacerOne"
+                    Version="1.0"
+                    ModuleName="./Contents/Manifest.addin" />
+  </Components>
+
+  <Components Description="2018 parts">
+    <RuntimeRequirements OS="Win64"
+                         Platform="Revit"
+                         SeriesMin="R2018"
+                         SeriesMax="R2018" />
+    <ComponentEntry AppName="PerpectoPlacerOne"
+                    Version="1.0"
+                    ModuleName="./Contents/Manifest.addin" />
+  </Components>
+
+  <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win64"
+                         Platform="Revit"
+                         SeriesMin="R2019"
+                         SeriesMax="R2019" />
+    <ComponentEntry AppName="PerpectoPlacerOne"
+                    Version="1.0"
+                    ModuleName="./Contents/Manifest.addin" />
+  </Components>
+
+  <Components Description="2020 parts">
+    <RuntimeRequirements OS="Win64"
+                         Platform="Revit"
+                         SeriesMin="R2020"
+                         SeriesMax="R2020" />
+    <ComponentEntry AppName="PerpectoPlacerOne"
+                    Version="1.0"
+                    ModuleName="./Contents/Manifest.addin" />
+  </Components>
+  <Components Description="2021 parts">
+    <RuntimeRequirements OS="Win64"
+                         Platform="Revit"
+                         SeriesMin="R2021"
+                         SeriesMax="R2021" />
+    <ComponentEntry AppName="PerpectoPlacerOne"
+                    Version="1.0"
+                    ModuleName="./Contents/Manifest.addin" />
+  </Components>
+    <Components Description="2022 parts">
+    <RuntimeRequirements OS="Win64"
+                         Platform="Revit"
+                         SeriesMin="R2022"
+                         SeriesMax="R2022" />
+    <ComponentEntry AppName="PerpectoPlacerOne"
+                    Version="1.0"
+                    ModuleName="./Contents/Manifest.addin" />
+  </Components>
+</ApplicationPackage>

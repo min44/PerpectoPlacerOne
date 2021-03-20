@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework> 
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile> 
+
+    <Platforms>x64;AnyCPU</Platforms> 
+    <ProjectGuid>{403b32f3-b36d-4c52-a1cf-fba46fc7067a}</ProjectGuid>
+    <AssemblyName>BimGen.PerpectoPlacerOne.Core.Commander</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Utility\Selection.fs" />
+    <Compile Include="Commands\WindowBased.fs" />
+    <Compile Include="Commands\PlaceElement.fs" />
+    <Compile Include="Commands\GetInstances.fs" />
+    <Compile Include="Commands\CreateElement.fs" />
+    <Compile Include="Commands\ShowMessage.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utility\Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
+  
