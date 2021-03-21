@@ -7,7 +7,7 @@
     xmlns:ui="clr-namespace:BimGen.PerpectoPlacerOne.Presentation.UI"
     Title="MainWindow"
     Width="270"
-    Height="340"
+    Height="350"
     Background="White"
     FontSize="12"
     Foreground="Gray"
@@ -142,8 +142,13 @@
                     Margin="0 0 5 0"
                     Command="{Binding RemoveAll}"
                     Content="Remove all" />
-                <TextBlock Grid.Column="2" Text="{Binding ElemCount}" />
+                <Button
+                    Grid.Column="2"
+                    Margin="0 0 5 0"
+                    Command="{Binding GetCount}"
+                    Content="Get count" />
             </Grid>
+            <TextBlock Margin="5" Text="{Binding Count}" />
         </StackPanel>
     </Border>
 </Window>

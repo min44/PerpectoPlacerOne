@@ -35,14 +35,14 @@ namespace BimGen.PerpectoPlacerOne.Application.Startup
 
         private Assembly ResolveItem(object sender, ResolveEventArgs args)
         {
-            string[] trustedAssemlies = new string[] {
+            string[] trustedAssemblies = new string[] {
                 "BimGen.PerpectoPlacerOne.Presentation.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "BimGen.PerpectoPlacerOne.Core.Commander, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" };
 
             try
             {
                 //Logger.Debug($"Requesting assembly {args.RequestingAssembly.FullName}");
-                return Array.Exists(trustedAssemlies, x => x == args.RequestingAssembly.FullName) ?
+                return Array.Exists(trustedAssemblies, x => x == args.RequestingAssembly.FullName) ?
                   Assembly.Load(args.Name) : null;
             }
             catch

@@ -1,11 +1,9 @@
 ﻿namespace BimGen.PerpectoPlacerOne.Core.Commander
 
-open System.Threading
 open Autodesk.Revit.UI
 open Autodesk.Revit.DB
 open Autodesk.Revit.UI.Selection
 open Autodesk.Revit.Exceptions
-open BimGen.PerpectoPlacerOne.Utility
 
 [<Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)>]
 [<Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)>]
@@ -40,7 +38,6 @@ type PlaceElement() =
                 let direction = ((wall.Location :?> LocationCurve).Curve :?> Line).Direction
 
                 try
-                    Logger.Debug($"ContextID: {Thread.CurrentContext.ContextID}")
                     use transaction = new Transaction(doc)
                     let status = transaction.Start("Create element")
                     symbl.Activate()

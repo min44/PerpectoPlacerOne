@@ -11,11 +11,16 @@
 
   <ItemGroup>
     <Compile Include="Utility\Selection.fs" />
+    <Compile Include="Commands\LibCommander.fs" />
     <Compile Include="Commands\WindowBased.fs" />
     <Compile Include="Commands\PlaceElement.fs" />
     <Compile Include="Commands\GetInstances.fs" />
     <Compile Include="Commands\CreateElement.fs" />
     <Compile Include="Commands\ShowMessage.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Revit.Async" Version="1.3.1" />
   </ItemGroup>
 
   <ItemGroup>

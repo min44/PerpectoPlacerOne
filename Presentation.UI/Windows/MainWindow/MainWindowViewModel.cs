@@ -63,7 +63,7 @@ namespace BimGen.PerpectoPlacerOne.Presentation.UI
                 var td = new TaskDialog("Warning");
 
                 td.MainInstruction = "Families is required";
-                td.MainContent = "There are no cable tray fittings families in the project. Do you want to load it?";
+                td.MainContent = "There are no families in the project. Do you want to load it?";
                 td.MainIcon = TaskDialogIcon.TaskDialogIconInformation;
 
                 td.AddCommandLink(TaskDialogCommandLinkId.CommandLink1, "Yes, load families into the project");
@@ -152,6 +152,25 @@ namespace BimGen.PerpectoPlacerOne.Presentation.UI
                     );
         });
 
+        public string Count { get; set; }
+        public ICommand GetCount => new AsyncCommand(async () =>
+        {
+            try
+            {
+                var objType = AssemblyStarter.GetObjectTypeByName(externalAssemblyName, "LibCommander");
+                var method = objType.GetMethod("GetCount").MakeGenericMethod(typeof(string));
+                var preresult = (Task<int>)method.Invoke(objType, new object[] { "Hello!" });
+                var result = await preresult;
+                Logger.Debug($"Result: {result}");
+                Count = $"Count of elements: {result}";
+            }
+            catch (Exception ex)
+            {
+                Logger.Debug($"Error: {ex.Message}");
+            }
+        }
+        );
+
 
         private ObservableCollection<Family> GetFamilies()
         {
@@ -171,18 +190,5 @@ namespace BimGen.PerpectoPlacerOne.Presentation.UI
                 .Cast<FamilySymbol>();
             return new ObservableCollection<FamilySymbol>(collection);
         }
-    }
-
-    public class RelayCommand : ICommand
-    {
-        private Func<object, Task> execute;
-
-        public event EventHandler CanExecuteChanged;
-
-        public RelayCommand(Func<object, Task> execute) => this.execute = execute;
-
-        public bool CanExecute(object parameter) => true;
-
-        public void Execute(object parameter) => execute(parameter);
     }
 }
